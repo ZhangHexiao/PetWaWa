@@ -13,6 +13,7 @@
 		04BBA99124C1140500818658 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BBA98F24C1140500818658 /* Main.storyboard */; };
 		04BBA99324C1140800818658 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BBA99224C1140800818658 /* Assets.xcassets */; };
 		04BBA99624C1140800818658 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BBA99424C1140800818658 /* LaunchScreen.storyboard */; };
+		74C8EAD3174D6F01F888E7E1 /* Pods_PetWaWa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9195DD6F1CE0533BC8E73955 /* Pods_PetWaWa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		04BBA99224C1140800818658 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04BBA99524C1140800818658 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04BBA99724C1140800818658 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9195DD6F1CE0533BC8E73955 /* Pods_PetWaWa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetWaWa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9683ADBA28697FBB950FB25 /* Pods-PetWaWa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetWaWa.debug.xcconfig"; path = "Target Support Files/Pods-PetWaWa/Pods-PetWaWa.debug.xcconfig"; sourceTree = "<group>"; };
+		CAC457BCB67D5BB363120BC4 /* Pods-PetWaWa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetWaWa.release.xcconfig"; path = "Target Support Files/Pods-PetWaWa/Pods-PetWaWa.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74C8EAD3174D6F01F888E7E1 /* Pods_PetWaWa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				04BBA98824C1140500818658 /* PetWaWa */,
 				04BBA98724C1140500818658 /* Products */,
+				C01351D7A7BE94DFB825ADBE /* Pods */,
+				F453BF7B2C464621A535768C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = PetWaWa;
 			sourceTree = "<group>";
 		};
+		C01351D7A7BE94DFB825ADBE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9683ADBA28697FBB950FB25 /* Pods-PetWaWa.debug.xcconfig */,
+				CAC457BCB67D5BB363120BC4 /* Pods-PetWaWa.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F453BF7B2C464621A535768C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9195DD6F1CE0533BC8E73955 /* Pods_PetWaWa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04BBA99A24C1140800818658 /* Build configuration list for PBXNativeTarget "PetWaWa" */;
 			buildPhases = (
+				52E79F3C0E62D51D6A6B4FAC /* [CP] Check Pods Manifest.lock */,
 				04BBA98224C1140500818658 /* Sources */,
 				04BBA98324C1140500818658 /* Frameworks */,
 				04BBA98424C1140500818658 /* Resources */,
+				D6DAB4CEB9B4411CB555C7F9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		52E79F3C0E62D51D6A6B4FAC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PetWaWa-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6DAB4CEB9B4411CB555C7F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PetWaWa/Pods-PetWaWa-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PetWaWa/Pods-PetWaWa-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PetWaWa/Pods-PetWaWa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		04BBA98224C1140500818658 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		04BBA99B24C1140800818658 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9683ADBA28697FBB950FB25 /* Pods-PetWaWa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +369,7 @@
 		};
 		04BBA99C24C1140800818658 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAC457BCB67D5BB363120BC4 /* Pods-PetWaWa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
