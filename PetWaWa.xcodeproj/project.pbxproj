@@ -3,13 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		04BBA98A24C1140500818658 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BBA98924C1140500818658 /* AppDelegate.swift */; };
 		04BBA98C24C1140500818658 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BBA98B24C1140500818658 /* SceneDelegate.swift */; };
-		04BBA98E24C1140500818658 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BBA98D24C1140500818658 /* ViewController.swift */; };
 		04BBA99124C1140500818658 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BBA98F24C1140500818658 /* Main.storyboard */; };
 		04BBA99324C1140800818658 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BBA99224C1140800818658 /* Assets.xcassets */; };
 		04BBA99624C1140800818658 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BBA99424C1140800818658 /* LaunchScreen.storyboard */; };
@@ -20,7 +19,6 @@
 		04BBA98624C1140500818658 /* PetWaWa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetWaWa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BBA98924C1140500818658 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04BBA98B24C1140500818658 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04BBA98D24C1140500818658 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04BBA99024C1140500818658 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04BBA99224C1140800818658 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04BBA99524C1140800818658 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,7 +63,6 @@
 			children = (
 				04BBA98924C1140500818658 /* AppDelegate.swift */,
 				04BBA98B24C1140500818658 /* SceneDelegate.swift */,
-				04BBA98D24C1140500818658 /* ViewController.swift */,
 				04BBA98F24C1140500818658 /* Main.storyboard */,
 				04BBA99224C1140800818658 /* Assets.xcassets */,
 				04BBA99424C1140800818658 /* LaunchScreen.storyboard */,
@@ -80,7 +77,6 @@
 				C9683ADBA28697FBB950FB25 /* Pods-PetWaWa.debug.xcconfig */,
 				CAC457BCB67D5BB363120BC4 /* Pods-PetWaWa.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -207,7 +203,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04BBA98E24C1140500818658 /* ViewController.swift in Sources */,
 				04BBA98A24C1140500818658 /* AppDelegate.swift in Sources */,
 				04BBA98C24C1140500818658 /* SceneDelegate.swift in Sources */,
 			);

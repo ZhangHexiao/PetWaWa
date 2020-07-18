@@ -15,7 +15,8 @@ target 'PetWaWa' do
   pod 'NVActivityIndicatorView/AppExtension'
   pod 'JGProgressHUD'
   pod 'PayPal-iOS-SDK'
-
   # Pods for PetWaWa
-
 end
+
+# ignore all warnings from all pods
+inhibit_all_warnings!
