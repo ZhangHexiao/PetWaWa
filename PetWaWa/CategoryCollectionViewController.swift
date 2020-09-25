@@ -14,6 +14,7 @@ class CategoryCollectionViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        downloadCategoriesFromFirebase(completion: {(allCategories) in print("callback")})
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.

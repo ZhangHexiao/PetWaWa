@@ -10,6 +10,9 @@
 		04A01169251D8180009BFB8C /* CategoryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A01168251D8180009BFB8C /* CategoryCollectionViewController.swift */; };
 		04A0116B251D8578009BFB8C /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0116A251D8578009BFB8C /* CategoryCollectionViewCell.swift */; };
 		04A0116D251D88DF009BFB8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04A0116C251D88DF009BFB8C /* GoogleService-Info.plist */; };
+		04A0116F251D92D9009BFB8C /* FirebaseCollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0116E251D92D9009BFB8C /* FirebaseCollectionReference.swift */; };
+		04A01172251E255F009BFB8C /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A01171251E255F009BFB8C /* Category.swift */; };
+		04A01175251E3677009BFB8C /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A01174251E3677009BFB8C /* Const.swift */; };
 		04BBA98A24C1140500818658 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BBA98924C1140500818658 /* AppDelegate.swift */; };
 		04BBA98C24C1140500818658 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BBA98B24C1140500818658 /* SceneDelegate.swift */; };
 		04BBA99124C1140500818658 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BBA98F24C1140500818658 /* Main.storyboard */; };
@@ -22,6 +25,9 @@
 		04A01168251D8180009BFB8C /* CategoryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewController.swift; sourceTree = "<group>"; };
 		04A0116A251D8578009BFB8C /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		04A0116C251D88DF009BFB8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		04A0116E251D92D9009BFB8C /* FirebaseCollectionReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseCollectionReference.swift; sourceTree = "<group>"; };
+		04A01171251E255F009BFB8C /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		04A01174251E3677009BFB8C /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		04BBA98624C1140500818658 /* PetWaWa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetWaWa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BBA98924C1140500818658 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04BBA98B24C1140500818658 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +52,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04A01170251E23CA009BFB8C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04A01171251E255F009BFB8C /* Category.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04A01173251E3660009BFB8C /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				04A0116E251D92D9009BFB8C /* FirebaseCollectionReference.swift */,
+				04A01174251E3677009BFB8C /* Const.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		04BBA97D24C1140500818658 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +90,8 @@
 		04BBA98824C1140500818658 /* PetWaWa */ = {
 			isa = PBXGroup;
 			children = (
+				04A01173251E3660009BFB8C /* Helper */,
+				04A01170251E23CA009BFB8C /* Model */,
 				04BBA98924C1140500818658 /* AppDelegate.swift */,
 				04BBA98B24C1140500818658 /* SceneDelegate.swift */,
 				04A0116A251D8578009BFB8C /* CategoryCollectionViewCell.swift */,
@@ -215,8 +240,11 @@
 			files = (
 				04A0116B251D8578009BFB8C /* CategoryCollectionViewCell.swift in Sources */,
 				04BBA98A24C1140500818658 /* AppDelegate.swift in Sources */,
+				04A0116F251D92D9009BFB8C /* FirebaseCollectionReference.swift in Sources */,
 				04BBA98C24C1140500818658 /* SceneDelegate.swift in Sources */,
 				04A01169251D8180009BFB8C /* CategoryCollectionViewController.swift in Sources */,
+				04A01172251E255F009BFB8C /* Category.swift in Sources */,
+				04A01175251E3677009BFB8C /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
