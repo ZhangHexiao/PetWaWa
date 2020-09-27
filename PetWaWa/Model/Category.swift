@@ -44,7 +44,6 @@ func downloadCategoriesFromFirebase(completion: @escaping(_ categoryArray: [Cate
         
         if !snapshot.isEmpty{
             for categoryDic in snapshot.documents{
-                print("created new category with")
                 categoryArray.append(Category(_dictionary: categoryDic.data() as NSDictionary))
             }
         }
@@ -52,12 +51,6 @@ func downloadCategoriesFromFirebase(completion: @escaping(_ categoryArray: [Cate
     }
  
 }
-
-
-
-
-
-
 
 // MARK: save category function
 func saveCategoryToFirebase(_ category: Category){

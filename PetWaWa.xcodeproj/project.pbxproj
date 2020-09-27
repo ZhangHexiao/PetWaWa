@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04A01169251D8180009BFB8C /* CategoryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A01168251D8180009BFB8C /* CategoryCollectionViewController.swift */; };
-		04A0116B251D8578009BFB8C /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0116A251D8578009BFB8C /* CategoryCollectionViewCell.swift */; };
 		04A0116D251D88DF009BFB8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04A0116C251D88DF009BFB8C /* GoogleService-Info.plist */; };
 		04A0116F251D92D9009BFB8C /* FirebaseCollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0116E251D92D9009BFB8C /* FirebaseCollectionReference.swift */; };
 		04A01172251E255F009BFB8C /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A01171251E255F009BFB8C /* Category.swift */; };
 		04A01175251E3677009BFB8C /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A01174251E3677009BFB8C /* Const.swift */; };
+		04A0117E251FC80C009BFB8C /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0117C251FC80C009BFB8C /* CategoryCollectionViewCell.swift */; };
+		04A0117F251FC80C009BFB8C /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A0117D251FC80C009BFB8C /* CategoryCollectionViewCell.xib */; };
+		04A0118225201374009BFB8C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0118125201374009BFB8C /* HomeViewController.swift */; };
+		04A01184252014DD009BFB8C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A01183252014DD009BFB8C /* HomeViewModel.swift */; };
+		04A01186252014F1009BFB8C /* HomeViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A01185252014F1009BFB8C /* HomeViewDataSource.swift */; };
 		04BBA98A24C1140500818658 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BBA98924C1140500818658 /* AppDelegate.swift */; };
 		04BBA98C24C1140500818658 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BBA98B24C1140500818658 /* SceneDelegate.swift */; };
 		04BBA99124C1140500818658 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BBA98F24C1140500818658 /* Main.storyboard */; };
@@ -22,12 +25,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		04A01168251D8180009BFB8C /* CategoryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewController.swift; sourceTree = "<group>"; };
-		04A0116A251D8578009BFB8C /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		04A0116C251D88DF009BFB8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		04A0116E251D92D9009BFB8C /* FirebaseCollectionReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseCollectionReference.swift; sourceTree = "<group>"; };
 		04A01171251E255F009BFB8C /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		04A01174251E3677009BFB8C /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		04A0117C251FC80C009BFB8C /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		04A0117D251FC80C009BFB8C /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		04A0118125201374009BFB8C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		04A01183252014DD009BFB8C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		04A01185252014F1009BFB8C /* HomeViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewDataSource.swift; sourceTree = "<group>"; };
 		04BBA98624C1140500818658 /* PetWaWa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetWaWa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BBA98924C1140500818658 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04BBA98B24C1140500818658 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +75,34 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		04A0117A251FC3FD009BFB8C /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				04A0118025201314009BFB8C /* HomePage */,
+				04A0117B251FC454009BFB8C /* Cell */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		04A0117B251FC454009BFB8C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				04A0117C251FC80C009BFB8C /* CategoryCollectionViewCell.swift */,
+				04A0117D251FC80C009BFB8C /* CategoryCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		04A0118025201314009BFB8C /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				04A0118125201374009BFB8C /* HomeViewController.swift */,
+				04A01183252014DD009BFB8C /* HomeViewModel.swift */,
+				04A01185252014F1009BFB8C /* HomeViewDataSource.swift */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
 		04BBA97D24C1140500818658 = {
 			isa = PBXGroup;
 			children = (
@@ -90,12 +124,11 @@
 		04BBA98824C1140500818658 /* PetWaWa */ = {
 			isa = PBXGroup;
 			children = (
+				04A0117A251FC3FD009BFB8C /* Scenes */,
 				04A01173251E3660009BFB8C /* Helper */,
 				04A01170251E23CA009BFB8C /* Model */,
 				04BBA98924C1140500818658 /* AppDelegate.swift */,
 				04BBA98B24C1140500818658 /* SceneDelegate.swift */,
-				04A0116A251D8578009BFB8C /* CategoryCollectionViewCell.swift */,
-				04A01168251D8180009BFB8C /* CategoryCollectionViewController.swift */,
 				04BBA98F24C1140500818658 /* Main.storyboard */,
 				04BBA99224C1140800818658 /* Assets.xcassets */,
 				04BBA99424C1140800818658 /* LaunchScreen.storyboard */,
@@ -183,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04BBA99624C1140800818658 /* LaunchScreen.storyboard in Resources */,
+				04A0117F251FC80C009BFB8C /* CategoryCollectionViewCell.xib in Resources */,
 				04A0116D251D88DF009BFB8C /* GoogleService-Info.plist in Resources */,
 				04BBA99324C1140800818658 /* Assets.xcassets in Resources */,
 				04BBA99124C1140500818658 /* Main.storyboard in Resources */,
@@ -238,12 +272,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04A0116B251D8578009BFB8C /* CategoryCollectionViewCell.swift in Sources */,
 				04BBA98A24C1140500818658 /* AppDelegate.swift in Sources */,
+				04A01184252014DD009BFB8C /* HomeViewModel.swift in Sources */,
 				04A0116F251D92D9009BFB8C /* FirebaseCollectionReference.swift in Sources */,
 				04BBA98C24C1140500818658 /* SceneDelegate.swift in Sources */,
-				04A01169251D8180009BFB8C /* CategoryCollectionViewController.swift in Sources */,
+				04A0118225201374009BFB8C /* HomeViewController.swift in Sources */,
 				04A01172251E255F009BFB8C /* Category.swift in Sources */,
+				04A0117E251FC80C009BFB8C /* CategoryCollectionViewCell.swift in Sources */,
+				04A01186252014F1009BFB8C /* HomeViewDataSource.swift in Sources */,
 				04A01175251E3677009BFB8C /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,7 +433,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = PetWaWa.PetWaWa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -415,7 +451,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = PetWaWa.PetWaWa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
